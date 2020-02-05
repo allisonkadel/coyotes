@@ -1,0 +1,2 @@
+class Dogtoy < ApplicationRecord
+end
