@@ -1,0 +1,13 @@
+<h1>Rental Form</h1>
+
+<%= form_for @rental do |f| %>
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+    <br>
+    <legend>Boats</legend>
+    <%= f.collection_select(:boat_id, Boat.all, :id, :name)%>
+
+    <br>
+    <br>
+    <%= f.submit %>
+<% end %>
